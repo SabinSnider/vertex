@@ -26,9 +26,9 @@
 					<p><?php echo $description; ?></p>
 				<?php endif; ?>
             </div><!-- logo -->
-            <div class="header_right">             
-              <?php if ( ! dynamic_sidebar( 'header-widget' ) ) : ?>                
-              <?php endif; // end sidebar widget area ?>          
+            <div class="header_right">
+              <?php if ( ! dynamic_sidebar( 'header-widget' ) ) : ?>
+              <?php endif; // end sidebar widget area ?>
             <div class="clear"></div>
           </div><!-- header_right -->
           <div class="clear"></div>
@@ -38,9 +38,16 @@
      <div class="container">
     <div class="toggle">
         <a class="toggleMenu" href="<?php echo esc_url('#');?>"><?php _e('Menu','twenty-minutes'); ?></a>
-     </div><!-- toggle --> 
+     </div><!-- toggle -->
      <div class="sitenav">
             <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
      </div><!-- site-nav -->
      </div>
   </div><!--#menubar -->
+
+  <style type="text/css">
+  .logo a img{
+    height: 140px !important;
+    width: 412px !important;
+  }
+  </style>
